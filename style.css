@@ -6,6 +6,9 @@
     justify-content: space-around;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* End Header */
