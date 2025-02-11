@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav class="bg-white border-b-2 border-gray-100 p-6 fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        
+        <!-- Logo -->
+        <a href="#" class="text-lg font-bold text-[#6f777d]">Bui Van Quoc Bao</a>
+
+        <!-- Menu Button (Mobile) -->
+        <button id="menu-btn" class="lg:hidden text-[#6f777d] focus:outline-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden lg:flex space-x-12">
+            <a href="#" class="text-lg text-[#6f777d] mx-6 relative hover:text-blue-500 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">About</a>
+
+            <a href="#" class="text-lg text-[#6f777d] mx-6 relative hover:text-blue-500 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">Publications</a>
+
+            <a href="#" class="text-lg text-[#6f777d] mx-6 relative hover:text-blue-500 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+
+            <a href="#" class="text-lg text-[#6f777d] mx-6 relative hover:text-blue-500 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">Awards</a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col space-y-2 p-4 bg-white">
+      <a href="#" class="text-[#6f777d] hover:text-blue-500">About</a>
+      <a href="#" class="text-[#6f777d] hover:text-blue-500">Publications</a>
+      <a href="#" class="text-[#6f777d] hover:text-blue-500">Projects</a>
+      <a href="#" class="text-[#6f777d] hover:text-blue-500">Awards</a>
+    </div>
+</nav>
+
+  <div class="max-w-7xl mx-auto px-4 mt-20">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-6 md:sticky top-[100px] self-start bg-white ">
+          <img class="rounded-full w-40 h-40 object-cover" src="buibao.jpg" alt="image description">
+          <div>
+            <span class="text-xl font-bold text-[#4F6071]">
+              Bui Van Quoc Bao
+            </span>
+          </div>
+          <div>
+            <span class="text-sm text-[#76797b]">Student of HCMUT-VNU</span> <br/>
+            <span class="text-sm text-[#76797b]">Big data club member</span>
+          </div>
+          <ul class="space-y-4 mt-5">
+              <li>
+                <a href="#f" class="text-[#76797b]">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#f" class="text-[#76797b]">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>Linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a href="#f" class="text-[#76797b]">
+                  <i class="fa-regular fa-envelope"></i>                  
+                  <span>Email</span>
+                </a>
+              </li>
+          </ul>
+        </div>
+        
+        <div class="p-6 col-span-3 space-y-6">
+            <div>
+              <h2 class="text-2xl font-bold text-[#3D4144] border-b-2 border-blue-400 mb-5">
+                About Me
+              </h2>
+              <p class="text-[3D4144] text-lg text-justify">
+                Since August 2024, I am a Research Scientist at Google Zurich in the Semantic Perception team of Dr. Federico Tombari.
+                <br/>
+                Before, I did my Ph.D. in the Computer Vision Lab at ETH Zurich supervised by Prof. Luc Van Gool and Dr. Dengxin Dai. My Ph.D. was focused on domain-robust and label-efficient visual scene understanding including domain-adaptive, domain-generalizable, semi-supervised, self-supervised, language-guided, and generative learning for semantic segmentation. During my Ph.D., I also interned at Google to work on vision-language models for label-efficient semantic segmentation.
+                <br/>
+                I received an M.Sc. in Robotics, Systems and Control from ETH Zurich in 2021 and was honored with the ETH Medal for an outstanding Master’s thesis. Before that, I studied Computer Systems in Engineering at the University of Magdeburg, Germany and was a member of the RoboCup @Work team RobOTTO.
+              </p>
+            </div>
+
+              <div>
+                <h2 class="text-2xl font-bold text-[#3D4144] border-b-2 border-blue-400 mb-5">
+                  Education
+                </h2>
+                <div >
+
+                  <div class="flex space-x-8">
+                    <div class="w-1/4 md:whitespace-nowrap">Jul 2021 - Jun 2024</div>
+                    <div class="w-3/4">
+                      <span class="text-black font-bold">ETH Zurich, Switzerland</span> <br />
+                      <span>Ph.D. at the Computer Vision Lab with Prof. Luc Van Gool</span> <br />
+                      <span>Topic: Domain-Robust Network Architectures and Training Strategies for Visual Scene Understanding</span> <br />
+                      <span>ETH Medal for an outstanding PhD thesis</span>
+                    </div>
+                  </div>
+                  
+                  <div class="flex space-x-8 mt-4">
+                    <div class="w-1/4 md:whitespace-nowrap">Sep 2019 - Jun 2021</div>
+                    <div class="w-3/4">
+                      <span class="text-black font-bold">ETH Zurich, Switzerland</span> <br />
+                      <span>Ph.D. at the Computer Vision Lab with Prof. Luc Van Gool</span> <br />
+                      <span>Topic: Domain-Robust Network Architectures and Training Strategies for Visual Scene Understanding</span> <br />
+                      <span>ETH Medal for an outstanding PhD thesis</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <h2 class="text-2xl font-bold text-[#3D4144] border-b-2 border-blue-400 mb-5">
+                  Publications
+                </h2>
+                <div class="space-y-6" >
+
+                  <div>
+                    <a class="flex space-x-8" href="#">
+                      <div class="w-2/5 whitespace-nowrap">
+                        <img class="w-full" src="project1.png" alt="image description">
+                      </div>
+  
+                      <div class="w-3/5">
+                        <span class="text-black font-bold">SemiVL: Semi-Supervised Semantic Segmentation with Vision-Language Guidance</span> 
+                          <br />
+                          <p class="text-justify">
+                            In semi-supervised semantic segmentation, a model is trained with a limited number of labeled images to reduce the high annotation effort. While previous methods are able to learn good segmentation boundaries, they are prone to confuse classes with similar visual appearance due to the limited supervision. On the other hand, vision-language models (VLMs) are able to learn diverse semantic knowledge from image-caption datasets but produce noisy segmentation due to the image-level training. In SemiVL, we propose to integrate rich priors from VLM pre-training into semi-supervised semantic segmentation to learn better semantic decision boundaries. To adapt the VLM from global to local reasoning, we introduce a spatial fine-tuning strategy for label-efficient learning. Further, we design a language-guided decoder to jointly reason over vision and language. Finally, we propose to handle inherent ambiguities in class labels by providing the model with class definitions in text format. SemiVL achieves major gains over previous semi-supervised methods.
+                          </p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div>
+                    <a class="flex space-x-8" href="#">
+                      <div class="w-2/5 whitespace-nowrap">
+                        <img class="w-full" src="project3.jpg" alt="image description">
+                      </div>
+  
+                      <div class="w-3/5">
+                        <span class="text-black font-bold">DGInStyle: Domain-Generalizable Semantic Segmentation with Image Diffusion Models and Stylized Semantic Control</span> 
+                          <br />
+                          <p class="text-justify">
+                            In semi-supervised semantic segmentation, a model is trained with a limited number of labeled images to reduce the high annotation effort. While previous methods are able to learn good segmentation boundaries, they are prone to confuse classes with similar visual appearance due to the limited supervision. On the other hand, vision-language models (VLMs) are able to learn diverse semantic knowledge from image-caption datasets but produce noisy segmentation due to the image-level training. In SemiVL, we propose to integrate rich priors from VLM pre-training into semi-supervised semantic segmentation to learn better semantic decision boundaries. To adapt the VLM from global to local reasoning, we introduce a spatial fine-tuning strategy for label-efficient learning. Further, we design a language-guided decoder to jointly reason over vision and language. Finally, we propose to handle inherent ambiguities in class labels by providing the model with class definitions in text format. SemiVL achieves major gains over previous semi-supervised methods.
+                          </p>
+                      </div>
+                    </a>
+                   
+                  </div>
+                
+                </div>
+              </div>
+
+
+
+
+              <div>
+                <h2 class="text-2xl font-bold text-[#3D4144] border-b-2 border-blue-400 mb-5">
+                  Projects
+                </h2>
+                <div class="space-y-6" >
+
+                  <div>
+                    <a class="flex space-x-8" href="#">
+                      <div class="w-2/5 whitespace-nowrap">
+                        <img class="w-full" src="project4.png" alt="image description">
+                      </div>
+  
+                      <div class="w-3/5">
+                        <span class="text-black font-bold">RoboCup Major @work</span> 
+                          <br />
+                          <p class="text-justify">
+                            In the RoboCup @work team "RobOTTO", I helped to build an autonomous mobile robot for the transport of work items in factories. From 2015 until 2018, I was responsible for the development of the state machine, world model, task planner, and object recognition. In 2017, we achieved the 2nd place at the World Cup.
+                          </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a class="flex space-x-8" href="#">
+                      <div class="w-2/5 whitespace-nowrap">
+                        <img class="w-full" src="project5.jpg" alt="image description">
+                      </div>
+  
+                      <div class="w-3/5">
+                        <span class="text-black font-bold">RoboCup Major @work</span> 
+                          <br />
+                          <p class="text-justify">
+                            In the RoboCup @work team "RobOTTO", I helped to build an autonomous mobile robot for the transport of work items in factories. From 2015 until 2018, I was responsible for the development of the state machine, world model, task planner, and object recognition. In 2017, we achieved the 2nd place at the World Cup.
+                          </p>
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div>
+                    <h2 class="text-2xl font-bold text-[#3D4144] border-b-2 border-blue-400 mb-5">
+                      Awards
+                    </h2>
+                    <div >
+    
+                      <div class="flex space-x-8">
+                        <div class="w-1/4 whitespace-nowrap">Jan 2025</div>
+                        <div class="w-3/4">
+                          <span class="text-black font-bold">ETH Medal for Outstanding Doctoral Theses</span> <br />
+                          <span>Awarded to the best 8% PhD theses at ETH Zurich</span> <br />
+                        </div>
+                      </div>
+                      
+                      <div class="flex space-x-8">
+                        <div class="w-1/4 whitespace-nowrap">Jun 2022</div>
+                        <div class="w-3/4">
+                          <span class="text-black font-bold">ETH Medal for Outstanding Doctoral Theses</span> <br />
+                          <span>Awarded to the best 8% PhD theses at ETH Zurich</span> <br />
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="bg-[#f2f3f3] py-8 w-full">
+    <div class="md:max-w-7xl md:mx-auto flex flex-col justify-center items-center">
+      <ul class="flex space-x-8">
+        <li>
+          <a href="#f" class="text-black">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#f" class="text-black">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a href="#f" class="text-black">
+            <i class="fa-regular fa-envelope"></i>                  
+            <span>Email</span>
+          </a>
+        </li>
+    </ul>
+      <p class="text-gray-500 text-xs">© 2025 Lukas Hoyer. Powered by Jekyll & Minimal Mistakes.</p>
+    </div>
+  </div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>

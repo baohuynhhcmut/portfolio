@@ -1,0 +1,11 @@
+/* Header */
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+/* End Header */
